@@ -23,6 +23,11 @@ ln -s /usr/local/cuda-11.5/include/CL /usr/include
 # Clonning the repo
 git clone https://github.com/psabadac/profanity.git
 cd profanity
+
+# Delete amd-related lines
+sed -i 117,122d profanity.cpp
+
+# Build and run
 make -B
 # Run the app
 ./profanity.x64
