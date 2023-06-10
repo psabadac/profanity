@@ -18,6 +18,7 @@ sh cuda_11.5.1_495.29.05_linux.run
 
 # Linking the OpenCL library necessary for make tool
 ln -s /usr/local/cuda-11.5/targets/x86_64-linux/lib/libOpenCL.so /usr/lib/libOpenCL.so
+ln -s /usr/local/cuda-11.5/include/CL /usr/include
 
 # Clonning the repo
 git clone https://github.com/psabadac/profanity.git
