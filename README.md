@@ -61,9 +61,6 @@ ln -s /opt/rocm-5.4.3/include/CL /usr/include
 git clone https://github.com/psabadac/profanity.git
 cd profanity
 
-# Delete amd-related lines
-sed -i 117,122d profanity.cpp
-
 # Build and run
 make -B
 # Run the app
